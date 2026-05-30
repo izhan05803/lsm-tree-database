@@ -8,39 +8,6 @@ A write-optimized key-value database engine built from scratch in Go. Think of i
 
 > **Visual representation of the four core components**
 
-*If the image doesn't load, here's the ASCII diagram:*
-
-```
-                        ┌─────────────────────────────┐
-                        │      In Memory (RAM)        │
-                        │                             │
-                        │    ┌─────────────────┐      │
-                        │    │   MemTable      │      │
-                        │    │   (HashMap)     │      │
-                        │    └────────┬────────┘      │
-                        └─────────────┼───────────────┘
-                                      │
-                    ┌─────────────────┼─────────────────┐
-                    │                 │                 │
-            ┌───────▼────────┐        │        ┌────────▼──────────┐
-            │   1. WAL File  │        │        │  3. SSTables      │
-            │   (Durability) │        │        │  (Persistence)    │
-            └────────────────┘        │        └────────┬──────────┘
-                    │                 │                 │
-                    └────────┬────────┴─────────────────┘
-                             │
-                    ┌────────▼─────────┐
-                    │  4. Compaction   │
-                    │  (Optimization)  │
-                    └──────────────────┘
-                             │
-                        ┌────▼─────────┐
-                        │ On Disk       │
-                        │ (Persistent)  │
-                        └───────────────┘
-```
-
----
 
 ## 🚗 The Four Components: A Car Engine Analogy
 
