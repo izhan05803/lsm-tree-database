@@ -4,6 +4,12 @@ A write-optimized key-value database engine built from scratch in Go. Think of i
 
 ## 🏗️ Architecture Overview
 
+![LSM Tree Architecture Diagram](docs/images/architecture.png)
+
+> **Visual representation of the four core components**
+
+*If the image doesn't load, here's the ASCII diagram:*
+
 ```
                         ┌─────────────────────────────┐
                         │      In Memory (RAM)        │
