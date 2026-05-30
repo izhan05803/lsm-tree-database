@@ -7,10 +7,10 @@ A write-optimized key-value database engine built from scratch in Go. Think of i
 ![LSM Tree Architecture Diagram](docs/images/architecture.png)
 
 ## WRITE PATH 
-![Write path diagram](docs/images/lsm_write_path_diagram.png)
+![Write path diagram](docs/images/lsm_write_path_diagram.svg)
 
 ## READ PATH
-![Read path diagram](docs/images/lsm_read_path_flowchart.png)
+![Read path diagram](docs/images/lsm_read_path_flowchart.svg)
 
 
 > **Visual representation of the four core components**
