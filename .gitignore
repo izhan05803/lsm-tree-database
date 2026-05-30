@@ -1,0 +1,24 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+lsm-db
+
+# Go build
+go.sum
+
+# Runtime data
+data/
+*.sst
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test coverage
+*.coverprofile
